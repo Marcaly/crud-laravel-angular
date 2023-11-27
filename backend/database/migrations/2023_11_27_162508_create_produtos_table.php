@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('produtos', function (Blueprint $table) {
             $table->id();
+            $table->string('nome_produto');
+            $table->unsignedBigInteger('categoria_id');
+            $table->foreign('categoria_id')->references('id')->on('categorias');
+            $table->float('valor_produto');
+            $table->date('data_vencimento');
+            $table->integer('quantidade_estoque');
+            $table->boolean('produto_perecivel');
             $table->timestamps();
         });
     }
