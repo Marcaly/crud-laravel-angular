@@ -10,12 +10,13 @@ class ProdutosController extends Controller
     public function index()
     {
         $produtos = Produtos::all();
-        return response()->json($produtos);
+        return response()->json($produtos,200);
     }
 
     
     public function store(Request $request)
     {
+
         $produtos = Produtos::create($request->all());
         return response()->json($produtos, 201);
     }
