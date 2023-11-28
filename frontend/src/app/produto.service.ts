@@ -19,7 +19,7 @@ export class ProdutoService {
     return this.http.get(`${this.apiUrl}/${id}`)
   }
 
-  adicionarProduto(id:number, produto:any): Observable<any> {
+  adicionarProduto(produto:any): Observable<any> {
     return this.http.post(this.apiUrl, produto)
   }
 
