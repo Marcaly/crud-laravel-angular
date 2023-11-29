@@ -12,7 +12,7 @@ class Cors
     {
         $response = $next($request);
         $response->header('Access-Control-Allow-Origin', 'http://localhost:4200');
-        $response->header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
+        $response->header('Access-Control-Allow-Methods', 'SHOW, INDEX,STORE,UPDATE, DESTROY, GET, POST, OPTIONS, PUT, DELETE');
         $response->header('Access-Control-Allow-Headers', 'Content-Type');
 
         return $response;
