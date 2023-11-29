@@ -45,3 +45,11 @@ O Angular será iniciado e estará disponível em http://localhost:4200 por padr
 Tive dificuldades em implementar os métodos POST E DELETE, estarei fazendo melhorias para resolver alguns bugs que surgiram nesses endpoints. 
 Implementarei testes unitários. 
 Implementarei validações para evitar mais bugs no código. 
+
+
+## Imagens do projeto
+
+![Foto1](https://github.com/Marcaly/crud-laravel-angular/blob/main/frontend/crudImagens/lista.png)
+![Foto2](https://github.com/Marcaly/crud-laravel-angular/blob/main/frontend/crudImagens/criar.png)
+![Foto3](https://github.com/Marcaly/crud-laravel-angular/blob/main/frontend/crudImagens/byId.png)
+![Foto4](https://github.com/Marcaly/crud-laravel-angular/blob/main/frontend/crudImagens/atualizar.png)
