@@ -10,7 +10,7 @@ import { ProdutoService } from '../services/produto.service';
 })
 export class DetalhesProdutoComponent {
 
-  id!: number;
+  id!: string;
   produto!: Produto;
   constructor(
     private route: ActivatedRoute,

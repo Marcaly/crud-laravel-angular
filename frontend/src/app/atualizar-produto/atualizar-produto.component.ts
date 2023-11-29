@@ -10,7 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class AtualizarProdutoComponent implements OnInit {
 
-  id!: number;
+  id!: string;
   produto: Produto = new Produto();
 
   constructor(

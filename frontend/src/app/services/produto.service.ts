@@ -16,7 +16,7 @@ export class ProdutoService {
     return this.http.get<Produto[]> (this.produtoApiUrl);
   }
 
-  mostrarProdutosPorId(id: number): Observable<Produto> {
+  mostrarProdutosPorId(id: string): Observable<Produto> {
     return this.http.get<Produto>(`${this.produtoApiUrl}/${id}`);
   }
 
@@ -24,12 +24,12 @@ export class ProdutoService {
     return this.http.put<Produto>(this.produtoApiUrl, produto)
   }
 
-  atualizarProduto(produto: Produto, id:number): Observable<Produto> {
+  atualizarProduto(produto: Produto, id:string): Observable<Produto> {
     const url = `${this.produtoApiUrl}/${produto.id}`;
     return this.http.put<Produto>(url, produto);
   }
 
-  deletarProduto(id: number) {
+  deletarProduto(id: string) {
     const url = `${this.produtoApiUrl}/${id}`;
     return this.http.delete<Produto>(url);
   }

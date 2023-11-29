@@ -1,7 +1,7 @@
 export class Produto {
-    id!: number;
+    id!: string;
     nome_produto!: string;
-    categoria_id!: number;
+    categoria_id!: string;
     valor_produto!: number;
     data_vencimento!: Date;
     quantidade_estoque!: number;
