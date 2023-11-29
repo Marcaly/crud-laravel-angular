@@ -1,0 +1,75 @@
+<div class="col-md-6 offset-md-3">
+    <h3>Atualizar produto</h3>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label>Nome</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nome_produto"
+          [(ngModel)]="produto.nome_produto"
+          name="nome_produto"
+        />
+      </div>
+  
+      <div class="form-group">
+        <label> Valor </label>
+        <input
+          type="text"
+          class="form-control"
+          id="valor_produto"
+          [(ngModel)]="produto.valor_produto"
+          name="valor_produto"
+        />
+      </div>
+  
+      <div class="form-group">
+        <label> Categoria</label>
+        <input
+          type="number"
+          class="form-control"
+          id="categoria_produto"
+          [(ngModel)]="produto.categoria_id"
+          name="categoria_produto"
+        />
+      </div>
+      <div class="form-group">
+        <label> Data de vencimento</label>
+        <input
+          type="date"
+          class="form-control"
+          id="data_vencimento"
+          [(ngModel)]="produto.data_vencimento"
+          name="data_vencimento"
+        />
+      </div>
+  
+      <div class="form-group">
+        <label> Quantidade em estoque</label>
+        <input
+          type="number"
+          class="form-control"
+          id="quantidade_estoque"
+          [(ngModel)]="produto.quantidade_estoque"
+          name="quantidade_estoque"
+        />
+      </div>
+  
+      <div class="form-group">
+        <label> Produto perecivel</label>
+        <input
+          type="boolean"
+          class="form-control"
+          id="produto_perecivel"
+          [(ngModel)]="produto.produto_perecivel"
+          name="produto_perecivel"
+        />
+      </div>
+  
+        
+      <button class="btn btn-danger" type="submit" style="margin-top: 10px">
+        Submit
+      </button>
+    </form>
+  </div>
+  
