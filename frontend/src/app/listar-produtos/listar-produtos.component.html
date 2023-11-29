@@ -1,0 +1,42 @@
+<h2>Lista de produtos</h2>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Valor</th>
+      <th>Categoria</th>
+      <th>Data de vencimento</th>
+      <th>Quantidade em estoque</th>
+      <th>Produto perecivel</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let produto of produtos">
+      <td>{{ produto.nome_produto }}</td>
+      <td>{{ produto.valor_produto }}</td>
+      <td>{{ produto.categoria_id }}</td>
+      <td>{{ produto.data_vencimento }}</td>
+      <td>{{ produto.quantidade_estoque }}</td>
+      <td>{{ produto.produto_perecivel }}</td>
+      <td>
+        <button (click)="atualizarProduto(produto.id)" class="btn botao">
+          Atualizar
+        </button>
+        <button
+          (click)="detalhesDoProduto(produto.id)"
+          class="btn btn-warning"
+          style="margin-left: 10px"
+        >
+          Ver
+        </button>
+        <button
+          (click)="deletarProduto(produto.id)"
+          class="btn btn-danger"
+          style="margin-left: 10px"
+        >
+          Deletar
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
